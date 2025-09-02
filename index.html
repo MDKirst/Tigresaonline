@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caça-Níquel: A Fúria do Tigre! (TURBO)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="character-area">
+            <!-- Imagem do tigre adicionada via CSS -->
+            <div class="character-bubble" id="characterBubble">Gire para a fortuna!</div>
+        </div>
+        <div class="slot-machine">
+            <div class="reels-container">
+                <!-- Os rolos serão preenchidos dinamicamente pelo JavaScript -->
+                <div class="reel" id="reel1"></div>
+                <div class="reel" id="reel2"></div>
+                <div class="reel" id="reel3"></div>
+            </div>
+            <div class="payline"></div>
+        </div>
+        <div class="controls-area">
+            <div class="balance-display">SALDO: R$ <span id="credits">100.00</span></div>
+            <div class="bet-controls">
+                <button id="decreaseBet">-</button>
+                <span>APOSTA: R$ <span id="betAmount">10.00</span></span>
+                <button id="increaseBet">+</button>
+            </div>
+            <button id="spinButton">GIRAR TURBO!</button>
+        </div>
+    </div>
+
+    <!-- Modal para mensagens de vitória/derrota -->
+    <div id="resultModal" class="modal-overlay">
+        <div class="modal-content">
+            <h2 id="modalTitle"></h2>
+            <p id="modalMessage"></p>
+            <button id="closeModal">Continuar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
